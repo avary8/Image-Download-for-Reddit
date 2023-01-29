@@ -12,6 +12,7 @@ This script will take three inputs from the user
 - a subreddit name
 - a thing you want to search 
 - number of pictures you want saved
+
 This script will then search for any pictures in the subreddit.
 Those pictures are run through Google Vision's API and are downloaded to a users computer in a folder called "SavedReddit/" + name of search.
 The pictures are only downloaded if Google Vision's API returns a list of labels or descriptors that match the keyword the user wants.
