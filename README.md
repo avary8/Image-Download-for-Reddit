@@ -19,7 +19,7 @@ The pictures are only downloaded if Google Vision's API returns a list of labels
 
 # Implemented Features
 - the program will stop searching after a certain constraint in order to not spam Reddit's API
-- the user can search a color, and the script will compare the rgb values of Google Vision's dominant colors
+- Not only can the user can search a specific object, but also a specific color. The script will compare the rgb values of Google Vision's dominant colors
 - when comparing dominant colors, the script will only compare a certain amount to limit incorrect color matching
 
 # Example Run
