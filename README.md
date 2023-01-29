@@ -1,9 +1,33 @@
 # Image-Download-for-Reddit
-Using the Google Vision API and the Reddit API, this script will search and download all images a user wants in a certain subreddit.
+Download Specific Images from Reddit using an AI model, Google Vision 
+## Contents
+- [Project Description](#project-description)
+- [Implemented Features](#implemented-features)
+- [Usage](#usage)
+- [Possible Future Implementation](#possible-future-implementation)
 
+# Project Description
+This script will take three inputs from the user
+- a subreddit name
+- a thing you want to search 
+- number of pictures you want saved
+This script will then search for any pictures in the subreddit.
+Those pictures are run through Google Vision's API and are downloaded to a users computer in a folder called "SavedReddit/" + name of search.
+The pictures are only downloaded if Google Vision's API returns a list of labels or descriptors that match the keyword the user wants.
 
-## Usage
-Needed
+# Implemented Features
+- the program will stop searching after a certain constraint in order to not spam Reddit's API
+- the user can search a color, and the script will compare the rgb values of Google Vision's dominant colors
+- when comparing dominant colors, the script will only compare a certain amount to limit incorrect color matching
+
+# Usage
+Right now, this script is more of a personal use; however, in the future, I hope to expand its capabilities.
 - Python in VSC
-- Google API 
-- Reddit API
+- Google API service account 
+- Reddit API credentials
+
+
+# Possible Future Implementation
+- allowing user to enter multiple words
+- more use of Google Vision API such as people detection, only downloading images of a high resolution, etc)
+- a website/better distributable implementation of this script (a website that could allow users to access the Reddit API and Google API without needed the licenses themselves)
