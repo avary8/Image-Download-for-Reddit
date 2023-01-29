@@ -3,6 +3,7 @@ Download Specific Images from Reddit using an AI model, Google Vision
 ## Contents
 - [Project Description](#project-description)
 - [Implemented Features](#implemented-features)
+- [Example Run](#example-run)
 - [Usage](#usage)
 - [Possible Future Implementation](#possible-future-implementation)
 
@@ -19,6 +20,15 @@ The pictures are only downloaded if Google Vision's API returns a list of labels
 - the program will stop searching after a certain constraint in order to not spam Reddit's API
 - the user can search a color, and the script will compare the rgb values of Google Vision's dominant colors
 - when comparing dominant colors, the script will only compare a certain amount to limit incorrect color matching
+
+# Examples Run
+### Searching for 20 cat images in r/cats
+![main py - swamphacks - Visual Studio Code 1_29_2023 10_17_46 AM](https://user-images.githubusercontent.com/64299012/215336972-7e992344-c52f-433f-8bb9-f64cb145a351.png)
+
+
+### 20 cats images downloaded in the path declared in the script
+![cats_results](https://user-images.githubusercontent.com/64299012/215337132-99454465-fdae-4c60-bb82-a4c2abeb2889.png)
+
 
 # Usage
 Right now, this script is more of a personal use; however, in the future, I hope to expand its capabilities.
