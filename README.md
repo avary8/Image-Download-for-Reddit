@@ -22,7 +22,7 @@ The pictures are only downloaded if Google Vision's API returns a list of labels
 - the user can search a color, and the script will compare the rgb values of Google Vision's dominant colors
 - when comparing dominant colors, the script will only compare a certain amount to limit incorrect color matching
 
-# Examples Run
+# Example Run
 Right now I am limited to a command line interface; however, in the future, I plan to change this.
 ### Searching for 20 cat images in r/cats
 ![main py - swamphacks - Visual Studio Code 1_29_2023 10_17_46 AM](https://user-images.githubusercontent.com/64299012/215336972-7e992344-c52f-433f-8bb9-f64cb145a351.png)
