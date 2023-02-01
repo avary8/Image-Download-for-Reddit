@@ -18,6 +18,7 @@ Those pictures are run through Google Vision's API and are downloaded to a users
 The pictures are only downloaded if Google Vision's API returns a list of labels or descriptors that match the keyword the user wants.
 
 # Implemented Features
+- the program will validate the existence of a subreddit. If a user types a subreddit that does not exist, the program will ask for a valid one.
 - the program will stop searching after a certain constraint in order to not spam Reddit's API
 - Not only can the user can search a specific object, but also a specific color. The script will compare the rgb values of Google Vision's dominant colors
 - when comparing dominant colors, the script will only compare a certain amount to limit incorrect color matching
