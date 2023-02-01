@@ -18,8 +18,7 @@ def verifySub(subred):
     if 'r/' in subred:
         return subred.replace('r/', '')
     else: 
-        #-----------------------------fix this-------------------------------------------
-        res = requests.get("https://oauth.reddit.com/r/" + subred +'?limit=5',
+        res = requests.get("https://oauth.reddit.com/r/" + subred +'?limit=1',
                    headers=headers)
         if len(res.json()['data']['children']) == 0:
             print("This subreddit does not exist.")
@@ -41,12 +40,11 @@ def createURL(subred):
 def getInput():
     print("Enter subreddit: ")
     subred = input()
-    # subred = verifySub(subred)
-    # while verifySub(subred) == "False":
-    #     print("Please enter a valid subreddit: ")
-    #     subred = input()
-    #     subred = verifySub(subred)
-    # print(subred)
+    subred = verifySub(subred)
+    while subred == "False":
+        print("Please enter a valid subreddit: ")
+        subred = input()
+        subred = verifySub(subred)
     print("Enter what you wish to save: ")
     saveThis = input()
 
@@ -54,7 +52,7 @@ def getInput():
     max = input()
     while verifyMax(max) == False:
         print("Please enter a valid number: ")
-        subred = input()
+        max = input()
 
     #url = createURL(subred)
     return subred, saveThis, max
